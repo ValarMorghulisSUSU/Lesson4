@@ -16,25 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owv-cJ-vlM">
-                                <rect key="frame" x="100" y="64" width="214" height="214"/>
-                                <color key="backgroundColor" red="0.95040171760862768" green="1" blue="0.42158550594693545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQw-l8-NvC">
+                                <rect key="frame" x="156" y="74" width="102" height="102"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="owv-cJ-vlM" secondAttribute="height" multiplier="1:1" id="9s0-ED-lIM"/>
+                                    <constraint firstAttribute="width" secondItem="YQw-l8-NvC" secondAttribute="height" multiplier="1:1" id="DUY-gc-vqY"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="PCM-kC-Zhe" appends="YES" id="geS-UM-EGo"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="owv-cJ-vlM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="P9i-t4-VgV"/>
-                            <constraint firstItem="owv-cJ-vlM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="pGH-5G-yOA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="owv-cJ-vlM" secondAttribute="trailing" constant="100" id="yml-GA-ffP"/>
+                            <constraint firstItem="YQw-l8-NvC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="7Ci-WU-6Mv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YQw-l8-NvC" secondAttribute="trailing" constant="156" id="VKf-yV-yc5"/>
+                            <constraint firstItem="YQw-l8-NvC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Xdf-2t-vVU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="2ND CONTROLLER" id="Fqi-6h-skR"/>
+                    <connections>
+                        <outlet property="leftConstraint" destination="7Ci-WU-6Mv" id="aCz-eh-3F1"/>
+                        <outlet property="topConstraint" destination="Xdf-2t-vVU" id="7P3-G9-Cta"/>
+                        <outlet property="yellowView" destination="YQw-l8-NvC" id="wLv-qk-9bv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="PCM-kC-Zhe">
+                    <connections>
+                        <action selector="startAnimation:" destination="BYZ-38-t0r" id="BV2-79-if4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
         </scene>
@@ -151,9 +165,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWB-Yt-n9L">
                                 <rect key="frame" x="80" y="94" width="254" height="128"/>
                                 <color key="backgroundColor" red="0.73381985391590809" green="1" blue="0.46033393621145213" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DWB-Yt-n9L" secondAttribute="height" multiplier="127:64" id="Pi2-4j-Czp"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eVn-8e-B3h" appends="YES" id="kvN-B8-93c"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4U-EB-u0V">
                                 <rect key="frame" x="80" y="312" width="254" height="128"/>
@@ -165,9 +183,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mz0-Sw-tF1">
                                 <rect key="frame" x="80" y="530" width="254" height="122"/>
                                 <color key="backgroundColor" red="1" green="0.5921144045906932" blue="0.82412823374558652" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mz0-Sw-tF1" secondAttribute="height" multiplier="127:61" id="4w6-iE-5Gt"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0xd-nT-oWd" appends="YES" id="iYp-hp-Y2H"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VCT-2x-Drv"/>
@@ -189,8 +211,23 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="3RD CONTROLLER" id="DQP-bo-K17"/>
+                    <connections>
+                        <outlet property="blueView" destination="U4U-EB-u0V" id="a70-EO-Pj6"/>
+                        <outlet property="greenView" destination="DWB-Yt-n9L" id="t22-BF-K89"/>
+                        <outlet property="pinkView" destination="mz0-Sw-tF1" id="TQ1-oa-U7P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MkL-ne-9rN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eVn-8e-B3h">
+                    <connections>
+                        <action selector="tapGreenView:" destination="3HU-Za-6TS" id="xFi-uH-Vyl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0xd-nT-oWd">
+                    <connections>
+                        <action selector="tapPinkView:" destination="3HU-Za-6TS" id="nPJ-ay-7ld"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="776.11607142857144"/>
         </scene>
@@ -223,6 +260,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

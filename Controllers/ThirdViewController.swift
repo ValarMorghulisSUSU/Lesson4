@@ -9,13 +9,24 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+    
+    @IBOutlet weak var greenView: UIView!
+    
+    @IBOutlet weak var blueView: UIView!
+    
+    @IBOutlet weak var pinkView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func tapGreenView(_ sender: UITapGestureRecognizer) {
+        UIView.transition(from: greenView, to: blueView, duration: 3, options: UIView.AnimationOptions(rawValue: 1)) { finished in }
+    }
+    
+    @IBAction func tapPinkView(_ sender: UITapGestureRecognizer) {
+    }
     /*
     // MARK: - Navigation
 

@@ -16,16 +16,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            guard segue.identifier == "showSecond" else { return }
-            guard let destination = segue.destination as? SecondViewController else { return }
-            destination.name = "Андрей"
-        }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            guard segue.identifier == "showSecond" else { return }
+//            guard let destination = segue.destination as? NewWindow else { return }
+//            destination.name = "Андрей"
+//        }
     
     @IBAction func openNewWindow(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "NewWindow")
-        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
     

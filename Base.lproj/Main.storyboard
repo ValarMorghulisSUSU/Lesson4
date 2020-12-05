@@ -120,8 +120,20 @@
                     <view key="view" contentMode="scaleToFill" id="Q73-Y8-DTS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLu-1d-730">
+                                <rect key="frame" x="172.5" y="184" width="69" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YiM-RQ-b7z"/>
                         <color key="backgroundColor" red="1" green="0.86471018192411264" blue="0.83673023878112285" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="eLu-1d-730" firstAttribute="centerX" secondItem="Q73-Y8-DTS" secondAttribute="centerX" id="eUb-Gl-KII"/>
+                            <constraint firstItem="eLu-1d-730" firstAttribute="top" secondItem="YiM-RQ-b7z" secondAttribute="top" constant="140" id="ppn-aX-VPF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPo-dZ-Zp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -136,17 +148,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWB-Yt-n9L">
-                                <rect key="frame" x="80" y="95" width="254" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWB-Yt-n9L">
+                                <rect key="frame" x="80" y="94" width="254" height="128"/>
                                 <color key="backgroundColor" red="0.73381985391590809" green="1" blue="0.46033393621145213" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DWB-Yt-n9L" secondAttribute="height" multiplier="127:64" id="Pi2-4j-Czp"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U4U-EB-u0V">
-                                <rect key="frame" x="80" y="306" width="254" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4U-EB-u0V">
+                                <rect key="frame" x="80" y="312" width="254" height="128"/>
                                 <color key="backgroundColor" red="0.56313394907995662" green="1" blue="0.88028574065839782" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U4U-EB-u0V" secondAttribute="height" multiplier="127:64" id="KWi-tG-Rc6"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mz0-Sw-tF1">
-                                <rect key="frame" x="80" y="522" width="254" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mz0-Sw-tF1">
+                                <rect key="frame" x="80" y="530" width="254" height="122"/>
                                 <color key="backgroundColor" red="1" green="0.5921144045906932" blue="0.82412823374558652" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mz0-Sw-tF1" secondAttribute="height" multiplier="127:61" id="4w6-iE-5Gt"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VCT-2x-Drv"/>

@@ -23,46 +23,26 @@ class SecondViewController: UIViewController {
         self.topConstraint.constant = 200
         UIView.animate(withDuration: 2) {
             self.view.layoutIfNeeded()
-        } completion: { finished in if(finished)
-        {
+        } completion: { finished in if(finished) {
             self.leftConstraint.constant = 10
             UIView.animate(withDuration: 3) {
                 self.view.layoutIfNeeded()
-            } completion: { finished in if(finished)
-            {
+            } completion: { finished in if(finished) {
                 self.leftConstraint.constant = 250
                 UIView.animate(withDuration: 3) {
                     self.view.layoutIfNeeded()
-                } completion: { finished in
-                    if(finished)
-                    {
+                } completion: { finished in if(finished) {
                         self.topConstraint.constant = 30
                         self.leftConstraint.constant = 156
                         UIView.animate(withDuration: 3) {
                             self.view.layoutIfNeeded()
-                        } completion: { finished in
-                        }
-
+                        } completion: { finished in}
                     }
-                    
                 }
-
             }
-
         }
-            
         }
-        
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

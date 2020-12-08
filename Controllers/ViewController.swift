@@ -20,14 +20,14 @@ class ViewController: UIViewController{
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "NewWindow") as! newController
         vc.newText = myLabel.text! + ", again!"
-        self.present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
-}   
+}
 
 
 
-class newController:UIViewController{ //newViewControllerDelegate{
+class newController:UIViewController { 
     var newText:String = ""
     @IBOutlet weak var updatableLabel: UILabel!
     override func viewDidLoad() {

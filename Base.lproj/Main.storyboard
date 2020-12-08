@@ -92,8 +92,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVb-73-FzY">
-                                <rect key="frame" x="171" y="430.5" width="72.5" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVb-73-FzY">
+                                <rect key="frame" x="175" y="430.5" width="64.5" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -127,15 +127,15 @@
             </objects>
             <point key="canvasLocation" x="1764" y="-577"/>
         </scene>
-        <!--View Controller-->
+        <!--New Controller-->
         <scene sceneID="lgS-u3-4lw">
             <objects>
-                <viewController storyboardIdentifier="NewWindow" id="VX9-Ke-0Kb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewWindow" id="VX9-Ke-0Kb" customClass="newController" customModule="Lesson4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q73-Y8-DTS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLu-1d-730">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="myText" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLu-1d-730">
                                 <rect key="frame" x="172.5" y="184" width="69" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
@@ -149,6 +149,9 @@
                             <constraint firstItem="eLu-1d-730" firstAttribute="top" secondItem="YiM-RQ-b7z" secondAttribute="top" constant="140" id="ppn-aX-VPF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="updatableLabel" destination="eLu-1d-730" id="oOE-zV-WOL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPo-dZ-Zp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
